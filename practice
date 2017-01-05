@@ -1,352 +1,354 @@
-HTML 目次
+Table of HTML contents
 ==============================
-1. [HTML について](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-1. [要素、タグ、実体](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AE%E8%A6%81%E7%B4%A0%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB)
-1. [HTML 全体構成](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90)
-1. [演習](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---%E3%81%84%E3%82%8D%E3%82%93%E3%81%AA%E8%A6%81%E7%B4%A0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
-1. [フォーム](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0)
-1. [演習](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---html-%E3%81%BE%E3%81%A8%E3%82%81)
+1. [About HTML](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+1. [Elements、Tags、Character Entities](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AE%E8%A6%81%E7%B4%A0%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB)
+1. [Overall HTML structure](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90)
+1. [Exercise 1](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---%E3%81%84%E3%82%8D%E3%82%93%E3%81%AA%E8%A6%81%E7%B4%A0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
+1. [Form](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0)
+1. [Exercise 2](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---html-%E3%81%BE%E3%81%A8%E3%82%81)
 
-HTML について
+About HTML
 ==============================
 
-| 項目       | 説明                                           |
+|   Contents     | Details                                           |
 |------------|------------------------------------------------|
-| 名称       | HyperText Markup Language                      |
-| 名称の読み | ハイパーテキスト マークアップ ランゲージ       |
-| 略称       | HTML                                           |
-| 略称の読み | エイチティーエムエル                           |
-| 拡張子     | .html .htm                                     |
-| 役割       | ウェブ上の文書を記述する                       |
+| Name       | HyperText Markup Language                      |
+| abbreviated     | HTML                                           |
+| extention     | .html .htm                                     |
+| function      |   a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages.                      |
 
-HTML ってなに？
+What is HTML ?
 ------------------------------
 
-> HyperText Markup Language（ハイパーテキスト マークアップ ランゲージ）、略記・略称HTML（エイチティーエムエル）とは、ウェブ上の文書を記述するためのマークアップ言語である。文章の中に記述することでさまざまな機能を記述設定することができる。
+> HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.[1] Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia web pages.
 >
-> [HyperText Markup Language - Wikipedia](http://ja.wikipedia.org/wiki/HyperText_Markup_Language)
+> [HyperText Markup Language - Wikipedia](https://en.wikipedia.org/wiki/HTML)
 
-「マークアップ言語 = **文書の構造** を表現するための言語」
+「markup language is to show **structure of the document**」
 
-つまり
+Therefore
 
-「HTML = **ハイパーテキストの構造** を表現するための言語」
+「HTML is to show **structure of Web pages using markup**」
 
-関連参考資料:
+related reference:
 
-- [ハイパーテキスト - Wikipedia](http://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)
+- [Hypertext - Wikipedia](https://en.wikipedia.org/wiki/Hypertext)
 
-    > ハイパーテキスト (hypertext) とは、複数の文書（テキスト）を相互に関連付け、結び付ける仕組み
+    > Hypertext is text displayed on a computer display or other electronic devices with references (hyperlinks) to other text which the reader can immediately access, or where text can be revealed progressively at multiple levels of detail (also called StretchText).
 
-- [マークアップ言語 - Wikipedia](http://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E8%A8%80%E8%AA%9E)
-- [軽量マークアップ言語 - Wikipedia](http://ja.wikipedia.org/wiki/%E8%BB%BD%E9%87%8F%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E8%A8%80%E8%AA%9E)
-    - [Markdown](http://ja.wikipedia.org/wiki/Markdown) や [reStructuredText](http://ja.wikipedia.org/wiki/ReStructuredText)、[はてな記法](http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7) もマークアップ言語と言える
+- [Markup language - https://en.wikipedia.org/wiki/Markup_language)
+- [Lightweight markup language - Wikipedia](https://en.wikipedia.org/wiki/Lightweight_markup_language)
+    - [Markdown](https://en.wikipedia.org/wiki/Markdown) and [reStructuredText](https://en.wikipedia.org/wiki/ReStructuredText) are also markup language.
 
-とりあえず HTML に触れてみよう
+Anyways, let's touch a HTML
 ------------------------------
 
-### 作ってみよう
+### Creating HTML file
 
-1. デスクトップに テキストドキュメント を作成
-1. 作成したテキストの名前を index.html に変更
-1. メモ帳で index.html を編集
-1. [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8)をコピペ
-1. 保存してメモ帳を閉じる
-1. index.html をダブルクリックしてブラウザを起動
+1. create text file on your Desktop
+1. change the name of text file that you just created to index.html
+1. edit index.html with note pad
+1. Copy [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) to index.html
+1. Save your text file and close it.
+1. Double click the index.html and run the browser.
 
-※文字化けする場合はエンコードを変更して下さい。
+※change the encoding if contents in index.html are unreadable characters
 
-### 見てみよう
+### Displaying on screen
 
-1. 好きなブラウザで好きな Web サイトを閲覧してください
-1. ブラウザ上で右クリック → ソースの表示をクリック
+1. Open website in any browser
+1. right click on browser → check the page source
 
-閲覧中の Web サイトの構造がどのようになっているか、確認してみてください。
+please check the structure of website you are opening 
 
-つぎに HTML を読んでみよう
+Next, let's read the HTML code
 ------------------------------
 
-あらためて [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) を見てみましょう。
+Take a look at [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) 
 
 ![](images/html_what_tag.png)
 
-- なんかどれも `<>` で囲まれてる？
-- `<>` の中にいろいろ書かれてる？
-- `<>` と `<>` に囲まれてるものもある？
+- Everything is surrounded by html tags`<>`？
+- Various things are written in`<>`？
+- Something is surrounded by `<>` and `<>`？
 
-これらは HTML を構成する **要素(タグ)** です。
+There are to configure **Element(Tag)**
 
-### HTML の要素ってなに？
+### What is the Element of HTML？
 
-HTML の構造を表現するものです。
+It is to express the HTML structure
 
-代表的な HTML 要素:
+Typical HTML elements:
 
-- `a`: 他の Web ページへのリンクを表現するもの
-- `title`: 文書のタイトルを表現するもの
-- `strong`: 文章に対しての強調を表現するもの
+- `a`: Defines a hyperlink
+- `title`: Defines a title for the document
+- `strong`: Defines important text
 
-HTML で要素を記述する時に出てくる符号が **タグ** と呼ばれています。
+When you write HTML Element, you can see the marks called called **Tag**
 
-### タグってなに？
 
-要素の名前を山括弧（ `<` と `>` ）で囲んだものです。
+### What is Tag？
 
-### HTML 要素はこうやって作られている
+Name of Elements is surrounded by angle bracket（ `<` and `>` ）
 
-例えば GitHub へリンクしたい場合は、
+
+### This is how HTML elements creates
+
+For example, if you access a link of GitHub,
+
 
 ```html
 <a href="https://github.com/">GitHub</a>
 ```
 
-上記のように `a` 要素(タグ) を記述します。これを分解してみましょう。
+You need to put `a` Elements(Tags) like above.
+Lets break this down
+
 
 ![](./images/html_element_tag.png)
 
-- 開始タグと終了タグ
-  - `<要素名>` および `</要素名>` と記述されているもの
-- 要素内容
-  - 要素が持つメインコンテンツ(本文みたいなもの)
-- 属性
-  - 要素に対する付加価値的なもの
-  - 要素内容と属性の違い例: `<a href="http://example.com">bar</a>`
-    - `bar` という文字は、他の Web ページへのリンクを **表現** している
-      - 内容に対して **構造(What)** を示している
-    - `bar` という文字は、`http://example.com` というページにリンクが貼られている
-      - 内容に対して **情報(Where)** を追加している
+- opening and closing tags
+  - It is written by `<Element name>` and `</Element name>`
+- Element Content
+  - another HTML element (the <body> element)
+- Attribute
+  - Attributes provide additional information about an element
+  - Example of what the difference between Element Content and Attribute: `<a href="http://example.com">bar</a>`
+    - The word of `bar` **expresses** the link to another page websites
+      - showing the **structure(What)** which corresponds to contents
+    - The word of `bar` is pasted to link of `http://example.com`
+      - adding **information(Where)** which corresponds to contents
 
-どのようなタグがあり、どのような属性があるかはWebサイトや本で調べてください。
+If you want to know more about what other tags and attribute have, search them by using the websites or books
 
-参考資料:
+Reference:
 
-- [HTML elements - HTML5](http://www.w3.org/TR/html-markup/elements.html)
-- [HTMLタグリファレンス（ABC順）](http://www.htmq.com/html/)
-- [\<A>－HTMLタグリファレンス](http://www.htmq.com/html/a.shtml)
+- [HTML elements - HTML5](http://www.w3schools.com/html/html5_new_elements.asp)
+- [HTML Tag Reference）](https://www.tutorialspoint.com/html/html_tags_reference.htm)
+- [\<A>－HTMLHTML Tag Reference](http://www.yourhtmlsource.com/myfirstsite/tagreference.html)
 
-### 要素(タグ)を記述する時に注意するところ
+### The things you should check below when you write the elements.
 
-1. ブラウザ、バージョンによって使えるタグ、使えないタグ、非推奨のタグがある
-1. ブラウザ、バージョンによって表現に違いがある場合がある
-1. 要素名に大文字、小文字の区別がない
-1. 属性値は「`"foo"`」や「`'foo'`」のように **クォート** で囲む
+1. There are some tags which can be used and deprecated and also cannot be used depends on what kind of browser and which versions.
+1. The way to show is sometimes difference depends on what kind of browsers and versions.
+1. There is no distinction between capital letters and small letters for elements name
+1. Attribute value is surrounded by **quotes**, such as「`"foo"`」 and 「`'foo'`」
    - × `<a href=http://example.com>`
    - ○ `<a href="http://example.com">`
-1. 後述する **実体参照**
+1. later discussion **Entity Reference**
 
-ブラウザ独自の拡張ではない、「これが HTML だ」というものは [W3C](http://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) という団体が勧告(仕様書の公開)している。
+The World Wide Web Consortium (W3C) is the main international standards organization for the World Wide Web (abbreviated WWW or W3). Group of [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium) that gives advice(open specification)
 
-例えば、HTML のバージョン4 の仕様書 → [HTML 4.0 Specification](http://www.w3.org/TR/REC-html40-971218/)
+[HTML 4.0 Specification](http://www.w3.org/TR/REC-html40-971218/)
 
-### 文字実体参照
+### Character Entity Reference
+For exmaple,
+    I really want to eat <pizza> !!
 
-たとえば
-
-    俺はとても <pizza> が食べたいんだ!!
-
-という文章を強調させたい、と考えます。
-すると HTML としてはこう書くでしょう。
+We are thinknig about making these sentences emphasize.
+To write as HTML, 
 
 ```
-<strong>俺はとても <pizza> が食べたいんだ!!</strong>
+<strong>I really want to eat <pizza>!!</strong>
 ```
 
-これをブラウザに表示させるとどうなるでしょうか？
+what's going to happen if you display this on browser?
 
 ![](images/html_entity_reference.png)
 
-何が食べたいのか表現できていません。
+We don't know what to eat by looking at this.
 
-この原因は、ブラウザのその正直すぎる HTML の解釈によるものです。
+The reason why this happens is because browser interprets HTML simply by following these 5 things below. 
 
-1. HTML は要素で構成されている
-1. 要素は タグで記述されている
-1. タグは `<` `>` で記述する
-1. つまり `<` とか `>` とか使われてたら「それはタグだよね？」
-1. ブラウザはタグをそのまま表示はしない
+1. HTML is structured by Elements
+2. Tags are written for Elements
+3. Tags are written by `<` `>`
+4. Consequently, if `<` and `>` are used, HTML thinks「These are tags right？」
+5. Do not display directly the tags on browser
 
-よって `<pizza>` を **要素内容** ではなく **開始タグ** として認識してしまった、ということです。
+As a result, it didn't recognize `<pizza>` as **Element Content**. It recognized it as **opening tags**
 
-HTMLで `<` や `>` などの **要素を表現する時に使用する記号** を表示したい場合、記述方法の内容を書く必要があります。
+It is necessary to write the contents of writing style if you want to display `<` or `>`  which is ** marks of elements to show** for HTML
 
-| 記号 | 記述方法        |
+| marks | writing style        |
 |------|-----------------|
 | `<`  | `&lt;`          |
 | `>`  | `&gt;`          |
 | `"`  | `&quot;`        |
 | `&`  | `&amp;`         |
 
-つまり
+So, 
 
 ```
-<strong>俺はとても &lt;pizza&gt; が食べたいんだ!!</strong>
+<strong>I really want to eat &lt;pizza&gt; !!</strong>
 ```
 
-が正解です。
+This is the right answer.
 
-HTML 全体構成
+overall structure of HTML
 ------------------------------
 
-### 基本構成
+### basic structure
 
 ```html
 <html>
     <head>
-        ヘッダ
+        Header
     </head>
     <body>
-        本文
+        body
     </body>
 </html>
 ```
 
-| 項目       | 説明                                                                        |
+| Elements       | Explanation                                                                        |
 |------------|-----------------------------------------------------------------------------|
-| html       | 文書がHTML文書であることを宣言するタグであり、 文書の最初と最後に記述する。 |
-| head       | 文書のタイトル等のヘッダ情報を記述する。                                    |
-| body       | 実際にブラウザに表示される文書の本体を記述する。                            |
+| html       | HTML tag declares HTML is used in the document. It is needed to write it at the beginning and end of the sentences. |
+| head       | The HEAD element contains information about the current document, such as its title.                                    |
+| body       | The BODY element contains information about the document's content which displays on browser.                           |
 
-### ツリー構造
+### Tree structure
 
-一つの要素(ノード)が複数の子要素を持ち、一つの子要素が複数の孫要素を持ち、という形で階層が深くなるほど枝分かれしていく構造のこと。
+a structure in which there are successive branchings or subdivisions.
 
-[HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) をツリー図で表すと、下図のようになります。
+If we want to display HTML Element Tree based on [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8), we will get that below.
 
 ![](images/html_tree.png)
 
-要素の親子関係は CSS や JavaScript でよく使われるので、雰囲気だけつかんでおきましょう。
+You need to look up what the CSS and JavaScript briefly since we often use these which have relationship of elements
 
-演習 - いろんな要素を使ってみよう
+Exercise 1 - Let's use various kinds of elements 
 ------------------------------
 
-### 下記 のHTMLソースコードをファイル に保存してください
+### Save the source code below into a file
 
-* 文字コード： UTF-8
-* 拡張子　　： html
+* Character encoding： UTF-8
+* File extension　　： html
 
 ```html
 <!DOCTYPE html>
 <html lang="ja">
     <head>
         <meta charset="UTF-8" />
-        <title>タイトル</title>
+        <title>Title</title>
     </head>
     <body>
     </body>
 </html>
 ```
 
-### `<body></body>`の間に文書を記述する
+### write sentence in between `<body>` and `</body>`
 
 ```html
 <body>
-    はじめてのＨＴＭＬ
+    My first HTML
 </body>
 ```
 
-### コメントを記述する
+### Write the comments
 
-書式： `<!-- コメント文 -->`
+Format： `<!-- comment text -->`
 
 ```html
 <body>
-    <!-- ここは、コメント部分です -->
-    はじめてのＨＴＭＬ
+    <!-- This is html comment -->
+    My first HTML
 </body>
 ```
 
-### 見出しをつける。
+### Put the Head
 
-書式： `<h1>見出し</h1>`
+Format： `<h1>Head</h1>`
 
-headingの略
+abbreviation of heading
 
 ```html
 <body>
-    <!--ここは、コメント部分です -->
-    <h1>はじめてのＨＴＭＬ</h1>
+    <!--This is html comment -->
+    <h1>My first HTML</h1>
 </body>
 ```
 
-### 段落を作る
+### Making the Paragraphs
 
-書式： `<p>段落文書・・・・</p>`
+Format： `<p>sentence in paragrah・・・・</p>`
 
-paragraphの略
+Abbreviation of paragraph
 
 ```html
 <body>
-    <!-- ここは、コメント部分です -->
-    <h1>はじめてのＨＴＭＬ</h1>
+    <!-- This is html comment  -->
+    <h1>My first HTML</h1>
 
-    <p>本講座は、これからホームページを作成したい人を対象にしています。
-       ホームページを記述するためのHTMLとスタイルシートをわかりやすく解説します。</p>
+    <p>This lecture is for people who want to develop the website 
+       This lecture will give you simple explanation about how to write HTML and style sheets to develope the websites </p>
 </body>
 ```
 
-### 改行する
+### New Line
 
-書式： `<br>`
+Format： `<br>`
 
-breakの略
+abbreviation of break
 
 ```html
 <body>
-    <!-- ここは、コメント部分です -->
-    <h1>はじめてのＨＴＭＬ</h1>
+    <!-- This is html comment -->
+    <h1>My first HTML</h1>
 
-    <p>本講座は、これからホームページを作成したい人を対象にしています。<br>
-       ホームページを記述するためのHTMLとスタイルシートをわかりやすく解説します。</p>
+    <p>This lecture is for people who want to develop the website <br>
+       This lecture will give you simple explanation about how to write HTML and style sheets to develope the websites</p>
 </body>
 ```
 
-### リンクを張る
+### Pasting the links
 
-書式： `<a href="リンク先">表示文</a>`
+Format： `<a href="destination address of the link">link text</a>`
 
-※Anchorの略
+※abbreviation of Anchor
 
 ```html
 <body>
     <a href="http://www.yahoo.co.jp">Yahoo</a>
     <a href="http://www.google.co.jp">Google</a>
-    <a href="mailto: hoge@example.com">お問い合わせ</a>
+    <a href="mailto: hoge@example.com">Inquiry</a>
 </body>
 ```
 
-### 特殊な文字を表示する
+### display the special character
 
-書式： `&lt;`  `&gt;`  `&quot;`  `&amp;`
+Format： `&lt;`  `&gt;`  `&quot;`  `&amp;`
 
 ```html
 <body>
-    <p>段落は&lt; p&gt;を使います。</p>
-    私は&quot;Ａ &amp; Ｗ&quot;が好きです。<br>
+    <p>Use &lt; and p&gt; for paragraph</p>
+    I like &quot;Ａ &amp; Ｗ&quot;.<br>
 </body>
 ```
 
-### HTMLタグリファレンスのサイトを参照して、他のタグも試してください。
+### Try the other tags by reference to the websites of HTML tags.
 
-[HTMLタグリファレンス（目的別）](http://www.htmq.com/html/indexm.shtml)
+[HTML Tag Reference](http://www.mytoptutorials.com/html/html-tags-reference/)
 
-フォーム
+Form
 ------------------------------
 
-HTML は冒頭でも述べたとおり
+As we mentioned HTML at the beginning,
 
-> ハイパーテキスト (hypertext) とは、複数の文書（テキスト）を相互に関連付け、結び付ける仕組み
+> Hypertext is the a software system allowing extensive cross-referencing between related sections of text and associated graphic material.
 
-複数の文書(HTMLの場合は Web ページ)を紐付ける構造を持ちます。
 
-既に紹介した `<a>` や `<link>` の他にも
-**フォーム** と呼ばれる仕組みで別の Web ページへのリンクを実現することができる。
+It has the structure to link to multiple documents(web pages if it is HTML) 
 
-フォーム記述例:
+Other than `<a>` and `<link>` we introduced before, 
+there is another way to link to a web page by using **Form** 
 
-下記 のHTMLソースコードをファイル に保存してください。
+Exmaple of form description:
 
-* 文字コード： UTF-8
-* 拡張子　　： html
+Save the source code below into a file
+
+* Character encoding： UTF-8
+* File extension　　： html
 
 ```html
 <!DOCTYPE html>
@@ -354,72 +356,73 @@ HTML は冒頭でも述べたとおり
     <head><meta charset=UTF-8></head>
     <body>
         <form action="index.html" method="GET">
-            <h1>HTML講座申し込み画面</h1>
-            氏名: <input type="text" id="name" name="name"><br>
-            性別: <select name="gender">
+            <h1>Registration screen for HTML lecture</h1>
+            Name: <input type="text" id="name" name="name"><br>
+            Gender: <select name="gender">
                       <option></option>
-                      <option value="0">男性</option>
-                      <option value="1">女性</option>
+                      <option value="0">Male</option>
+                      <option value="1">Female</option>
                   </select><br>
             E-Mail: <input type="email" id="email" name="email"><br>
-            <input type="submit" value="送信"><input type="submit" value="戻る">
+            <input type="submit" value="send"><input type="submit" value="back">
         </form>
     </body>
 </html>
 ```
 
-- `<form>` の `action` 属性
-  - フォームのデータの送信先
-  - 雑に言うと `<a>` の `href` 属性みたいなもの
-- `<form>` の `method` 属性
-  - フォームのデータの送信先に対してどのようにアクセスするか(HTTPメソッド: 転送方法)を指定する
-- `<input>` `<select>` など
-  - **form control 要素** と呼ばれる
+- `<form>`'s `action` attribute
+  - destination of form data
+  - It is like `href` attribute of `<a>`
+- `<form>`'s `method` attribute
+  - To decide how to access destination of form data,  we need to specify (HTTP method: transfer method). 
+- `<input>`, `<select>`, and so on. 
+  - It is called **form control elements**
 
-フォームを利用することで、データの送信先に対しての画面遷移だけでなく、パラメータも一緒に渡すことができる。
+by using form, not only screen transition to destination of form data but also you can pass the parameter together at the same time.
 
-例:
+Example:
 
-- Facebook のログイン画面で、ログインIDとパスワードを入力して認証ページに送信する
-- Google の検索を実行する
+- on your Facebook login page, enter your login ID and password and send them to authentication page. 
+- Run a Google search
 
-詳細については、HTTP/Webアプリケーション開発 の講義でフォローします。
+For further details, we will cover in lecture for HTTP/Web application development.
 
-演習 - HTML まとめ
+Exercise 2 - HTML Summary
 ------------------------------
 
-これまで紹介しなかった要素を使用して、ページを1画面作成してみてください。
+Create 1 page by using elements which are not covered here in this HTML lecture
 
-- 表 `table`
 
-    例えばこんなやつ
+- Table `table`
 
-    | メニュー                           | 価格(サイズM) | 価格(サイズL) |
+    These are examples of table below
+
+    | Menu                           | Price (Size M) | Price (Size L) |
     |------------------------------------|---------------|---------------|
-    | クワトロフォルマッジ               | &yen; 2,450   | &yen; 3,800   |
-    | プレミアム・チーズンロールクワトロ | &yen; 2,800   | &yen; 3,970   |
-    | ドミノ・デラックス                 | &yen; 2,000   | &yen; 3,000   |
+    | Quattro Formaggi              | 2,450 yen   | 3,800 yen  |
+    | Premium・Cheese Roll Quattro | 2,800 yen   | 3,970 yen  |
+    | Domino・Deluxe                | 2,000 yen   | 3,000 yen  |
 
-- リスト `ul` `li`
+- HTML Lists `ul` and `li`
 
-    例えばこんなやつ
+    These are examples of Lists(`ul` and `li`) below
 
-    1. はじめに
-    2. 自己紹介
-    3. 本編
-        1. 僕が旅立ったあの日
-        2. あの子との出会い
-    4. 完
+    1. Beginning
+    2. Self Introduction
+    3. Editorial
+        1. The day I left
+        2. Meeting that person
+    4. End
 
-- 他にも
-    - すでに CSS でデザインをかっこよくできる方はチャレンジ
+- challenging! 
+    - chalenge to make your websites look good using CSS if you already know the knowledge of CSS.
 
-- その他心掛けること
-    * 正しくHTMLタグを使用していますか？
-    * 属性、要素内容は正しいですか？
-    * インデントを揃えていますか？
+- Other things that you need to care about
+    * Are you using HTML tag correctly ?
+    * Are your attribution and content of elements ?
+    * Did you align the indentation ?
 
-終わり
+Finish!
 ------------------------------
 
-お疲れ様でした。
+ Thanks for your hard work!
