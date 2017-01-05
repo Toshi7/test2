@@ -1,0 +1,425 @@
+HTML 目次
+==============================
+1. [HTML について](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+1. [要素、タグ、実体](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E3%81%AE%E8%A6%81%E7%B4%A0%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB)
+1. [HTML 全体構成](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#html-%E5%85%A8%E4%BD%93%E6%A7%8B%E6%88%90)
+1. [演習](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---%E3%81%84%E3%82%8D%E3%82%93%E3%81%AA%E8%A6%81%E7%B4%A0%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86)
+1. [フォーム](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A0)
+1. [演習](https://github.com/occ-corp/bootcamp/blob/master/newbie/webpage_dev/about_html.md#%E6%BC%94%E7%BF%92---html-%E3%81%BE%E3%81%A8%E3%82%81)
+
+HTML について
+==============================
+
+| 項目       | 説明                                           |
+|------------|------------------------------------------------|
+| 名称       | HyperText Markup Language                      |
+| 名称の読み | ハイパーテキスト マークアップ ランゲージ       |
+| 略称       | HTML                                           |
+| 略称の読み | エイチティーエムエル                           |
+| 拡張子     | .html .htm                                     |
+| 役割       | ウェブ上の文書を記述する                       |
+
+HTML ってなに？
+------------------------------
+
+> HyperText Markup Language（ハイパーテキスト マークアップ ランゲージ）、略記・略称HTML（エイチティーエムエル）とは、ウェブ上の文書を記述するためのマークアップ言語である。文章の中に記述することでさまざまな機能を記述設定することができる。
+>
+> [HyperText Markup Language - Wikipedia](http://ja.wikipedia.org/wiki/HyperText_Markup_Language)
+
+「マークアップ言語 = **文書の構造** を表現するための言語」
+
+つまり
+
+「HTML = **ハイパーテキストの構造** を表現するための言語」
+
+関連参考資料:
+
+- [ハイパーテキスト - Wikipedia](http://ja.wikipedia.org/wiki/%E3%83%8F%E3%82%A4%E3%83%91%E3%83%BC%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88)
+
+    > ハイパーテキスト (hypertext) とは、複数の文書（テキスト）を相互に関連付け、結び付ける仕組み
+
+- [マークアップ言語 - Wikipedia](http://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E8%A8%80%E8%AA%9E)
+- [軽量マークアップ言語 - Wikipedia](http://ja.wikipedia.org/wiki/%E8%BB%BD%E9%87%8F%E3%83%9E%E3%83%BC%E3%82%AF%E3%82%A2%E3%83%83%E3%83%97%E8%A8%80%E8%AA%9E)
+    - [Markdown](http://ja.wikipedia.org/wiki/Markdown) や [reStructuredText](http://ja.wikipedia.org/wiki/ReStructuredText)、[はてな記法](http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7) もマークアップ言語と言える
+
+とりあえず HTML に触れてみよう
+------------------------------
+
+### 作ってみよう
+
+1. デスクトップに テキストドキュメント を作成
+1. 作成したテキストの名前を index.html に変更
+1. メモ帳で index.html を編集
+1. [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8)をコピペ
+1. 保存してメモ帳を閉じる
+1. index.html をダブルクリックしてブラウザを起動
+
+※文字化けする場合はエンコードを変更して下さい。
+
+### 見てみよう
+
+1. 好きなブラウザで好きな Web サイトを閲覧してください
+1. ブラウザ上で右クリック → ソースの表示をクリック
+
+閲覧中の Web サイトの構造がどのようになっているか、確認してみてください。
+
+つぎに HTML を読んでみよう
+------------------------------
+
+あらためて [HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) を見てみましょう。
+
+![](images/html_what_tag.png)
+
+- なんかどれも `<>` で囲まれてる？
+- `<>` の中にいろいろ書かれてる？
+- `<>` と `<>` に囲まれてるものもある？
+
+これらは HTML を構成する **要素(タグ)** です。
+
+### HTML の要素ってなに？
+
+HTML の構造を表現するものです。
+
+代表的な HTML 要素:
+
+- `a`: 他の Web ページへのリンクを表現するもの
+- `title`: 文書のタイトルを表現するもの
+- `strong`: 文章に対しての強調を表現するもの
+
+HTML で要素を記述する時に出てくる符号が **タグ** と呼ばれています。
+
+### タグってなに？
+
+要素の名前を山括弧（ `<` と `>` ）で囲んだものです。
+
+### HTML 要素はこうやって作られている
+
+例えば GitHub へリンクしたい場合は、
+
+```html
+<a href="https://github.com/">GitHub</a>
+```
+
+上記のように `a` 要素(タグ) を記述します。これを分解してみましょう。
+
+![](./images/html_element_tag.png)
+
+- 開始タグと終了タグ
+  - `<要素名>` および `</要素名>` と記述されているもの
+- 要素内容
+  - 要素が持つメインコンテンツ(本文みたいなもの)
+- 属性
+  - 要素に対する付加価値的なもの
+  - 要素内容と属性の違い例: `<a href="http://example.com">bar</a>`
+    - `bar` という文字は、他の Web ページへのリンクを **表現** している
+      - 内容に対して **構造(What)** を示している
+    - `bar` という文字は、`http://example.com` というページにリンクが貼られている
+      - 内容に対して **情報(Where)** を追加している
+
+どのようなタグがあり、どのような属性があるかはWebサイトや本で調べてください。
+
+参考資料:
+
+- [HTML elements - HTML5](http://www.w3.org/TR/html-markup/elements.html)
+- [HTMLタグリファレンス（ABC順）](http://www.htmq.com/html/)
+- [\<A>－HTMLタグリファレンス](http://www.htmq.com/html/a.shtml)
+
+### 要素(タグ)を記述する時に注意するところ
+
+1. ブラウザ、バージョンによって使えるタグ、使えないタグ、非推奨のタグがある
+1. ブラウザ、バージョンによって表現に違いがある場合がある
+1. 要素名に大文字、小文字の区別がない
+1. 属性値は「`"foo"`」や「`'foo'`」のように **クォート** で囲む
+   - × `<a href=http://example.com>`
+   - ○ `<a href="http://example.com">`
+1. 後述する **実体参照**
+
+ブラウザ独自の拡張ではない、「これが HTML だ」というものは [W3C](http://ja.wikipedia.org/wiki/World_Wide_Web_Consortium) という団体が勧告(仕様書の公開)している。
+
+例えば、HTML のバージョン4 の仕様書 → [HTML 4.0 Specification](http://www.w3.org/TR/REC-html40-971218/)
+
+### 文字実体参照
+
+たとえば
+
+    俺はとても <pizza> が食べたいんだ!!
+
+という文章を強調させたい、と考えます。
+すると HTML としてはこう書くでしょう。
+
+```
+<strong>俺はとても <pizza> が食べたいんだ!!</strong>
+```
+
+これをブラウザに表示させるとどうなるでしょうか？
+
+![](images/html_entity_reference.png)
+
+何が食べたいのか表現できていません。
+
+この原因は、ブラウザのその正直すぎる HTML の解釈によるものです。
+
+1. HTML は要素で構成されている
+1. 要素は タグで記述されている
+1. タグは `<` `>` で記述する
+1. つまり `<` とか `>` とか使われてたら「それはタグだよね？」
+1. ブラウザはタグをそのまま表示はしない
+
+よって `<pizza>` を **要素内容** ではなく **開始タグ** として認識してしまった、ということです。
+
+HTMLで `<` や `>` などの **要素を表現する時に使用する記号** を表示したい場合、記述方法の内容を書く必要があります。
+
+| 記号 | 記述方法        |
+|------|-----------------|
+| `<`  | `&lt;`          |
+| `>`  | `&gt;`          |
+| `"`  | `&quot;`        |
+| `&`  | `&amp;`         |
+
+つまり
+
+```
+<strong>俺はとても &lt;pizza&gt; が食べたいんだ!!</strong>
+```
+
+が正解です。
+
+HTML 全体構成
+------------------------------
+
+### 基本構成
+
+```html
+<html>
+    <head>
+        ヘッダ
+    </head>
+    <body>
+        本文
+    </body>
+</html>
+```
+
+| 項目       | 説明                                                                        |
+|------------|-----------------------------------------------------------------------------|
+| html       | 文書がHTML文書であることを宣言するタグであり、 文書の最初と最後に記述する。 |
+| head       | 文書のタイトル等のヘッダ情報を記述する。                                    |
+| body       | 実際にブラウザに表示される文書の本体を記述する。                            |
+
+### ツリー構造
+
+一つの要素(ノード)が複数の子要素を持ち、一つの子要素が複数の孫要素を持ち、という形で階層が深くなるほど枝分かれしていく構造のこと。
+
+[HTML文書の例](http://ja.wikipedia.org/wiki/HyperText_Markup_Language#HTML.E6.96.87.E6.9B.B8) をツリー図で表すと、下図のようになります。
+
+![](images/html_tree.png)
+
+要素の親子関係は CSS や JavaScript でよく使われるので、雰囲気だけつかんでおきましょう。
+
+演習 - いろんな要素を使ってみよう
+------------------------------
+
+### 下記 のHTMLソースコードをファイル に保存してください
+
+* 文字コード： UTF-8
+* 拡張子　　： html
+
+```html
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>タイトル</title>
+    </head>
+    <body>
+    </body>
+</html>
+```
+
+### `<body></body>`の間に文書を記述する
+
+```html
+<body>
+    はじめてのＨＴＭＬ
+</body>
+```
+
+### コメントを記述する
+
+書式： `<!-- コメント文 -->`
+
+```html
+<body>
+    <!-- ここは、コメント部分です -->
+    はじめてのＨＴＭＬ
+</body>
+```
+
+### 見出しをつける。
+
+書式： `<h1>見出し</h1>`
+
+headingの略
+
+```html
+<body>
+    <!--ここは、コメント部分です -->
+    <h1>はじめてのＨＴＭＬ</h1>
+</body>
+```
+
+### 段落を作る
+
+書式： `<p>段落文書・・・・</p>`
+
+paragraphの略
+
+```html
+<body>
+    <!-- ここは、コメント部分です -->
+    <h1>はじめてのＨＴＭＬ</h1>
+
+    <p>本講座は、これからホームページを作成したい人を対象にしています。
+       ホームページを記述するためのHTMLとスタイルシートをわかりやすく解説します。</p>
+</body>
+```
+
+### 改行する
+
+書式： `<br>`
+
+breakの略
+
+```html
+<body>
+    <!-- ここは、コメント部分です -->
+    <h1>はじめてのＨＴＭＬ</h1>
+
+    <p>本講座は、これからホームページを作成したい人を対象にしています。<br>
+       ホームページを記述するためのHTMLとスタイルシートをわかりやすく解説します。</p>
+</body>
+```
+
+### リンクを張る
+
+書式： `<a href="リンク先">表示文</a>`
+
+※Anchorの略
+
+```html
+<body>
+    <a href="http://www.yahoo.co.jp">Yahoo</a>
+    <a href="http://www.google.co.jp">Google</a>
+    <a href="mailto: hoge@example.com">お問い合わせ</a>
+</body>
+```
+
+### 特殊な文字を表示する
+
+書式： `&lt;`  `&gt;`  `&quot;`  `&amp;`
+
+```html
+<body>
+    <p>段落は&lt; p&gt;を使います。</p>
+    私は&quot;Ａ &amp; Ｗ&quot;が好きです。<br>
+</body>
+```
+
+### HTMLタグリファレンスのサイトを参照して、他のタグも試してください。
+
+[HTMLタグリファレンス（目的別）](http://www.htmq.com/html/indexm.shtml)
+
+フォーム
+------------------------------
+
+HTML は冒頭でも述べたとおり
+
+> ハイパーテキスト (hypertext) とは、複数の文書（テキスト）を相互に関連付け、結び付ける仕組み
+
+複数の文書(HTMLの場合は Web ページ)を紐付ける構造を持ちます。
+
+既に紹介した `<a>` や `<link>` の他にも
+**フォーム** と呼ばれる仕組みで別の Web ページへのリンクを実現することができる。
+
+フォーム記述例:
+
+下記 のHTMLソースコードをファイル に保存してください。
+
+* 文字コード： UTF-8
+* 拡張子　　： html
+
+```html
+<!DOCTYPE html>
+<html>
+    <head><meta charset=UTF-8></head>
+    <body>
+        <form action="index.html" method="GET">
+            <h1>HTML講座申し込み画面</h1>
+            氏名: <input type="text" id="name" name="name"><br>
+            性別: <select name="gender">
+                      <option></option>
+                      <option value="0">男性</option>
+                      <option value="1">女性</option>
+                  </select><br>
+            E-Mail: <input type="email" id="email" name="email"><br>
+            <input type="submit" value="送信"><input type="submit" value="戻る">
+        </form>
+    </body>
+</html>
+```
+
+- `<form>` の `action` 属性
+  - フォームのデータの送信先
+  - 雑に言うと `<a>` の `href` 属性みたいなもの
+- `<form>` の `method` 属性
+  - フォームのデータの送信先に対してどのようにアクセスするか(HTTPメソッド: 転送方法)を指定する
+- `<input>` `<select>` など
+  - **form control 要素** と呼ばれる
+
+フォームを利用することで、データの送信先に対しての画面遷移だけでなく、パラメータも一緒に渡すことができる。
+
+例:
+
+- Facebook のログイン画面で、ログインIDとパスワードを入力して認証ページに送信する
+- Google の検索を実行する
+
+詳細については、HTTP/Webアプリケーション開発 の講義でフォローします。
+
+演習 - HTML まとめ
+------------------------------
+
+これまで紹介しなかった要素を使用して、ページを1画面作成してみてください。
+
+- 表 `table`
+
+    例えばこんなやつ
+
+    | メニュー                           | 価格(サイズM) | 価格(サイズL) |
+    |------------------------------------|---------------|---------------|
+    | クワトロフォルマッジ               | &yen; 2,450   | &yen; 3,800   |
+    | プレミアム・チーズンロールクワトロ | &yen; 2,800   | &yen; 3,970   |
+    | ドミノ・デラックス                 | &yen; 2,000   | &yen; 3,000   |
+
+- リスト `ul` `li`
+
+    例えばこんなやつ
+
+    1. はじめに
+    2. 自己紹介
+    3. 本編
+        1. 僕が旅立ったあの日
+        2. あの子との出会い
+    4. 完
+
+- 他にも
+    - すでに CSS でデザインをかっこよくできる方はチャレンジ
+
+- その他心掛けること
+    * 正しくHTMLタグを使用していますか？
+    * 属性、要素内容は正しいですか？
+    * インデントを揃えていますか？
+
+終わり
+------------------------------
+
+お疲れ様でした。
